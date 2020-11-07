@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
     'barcodeApp',
     'sales',
+    'pdf'
 ]
 
 MIDDLEWARE = [

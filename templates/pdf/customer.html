@@ -1,0 +1,10 @@
+{% extends '../base.html' %}
+
+{% block body %}
+
+    {% for customer in object_list %}
+        <h4>{{ customer.name }}</h4>
+        <a href="{% url 'pdf:customer-pdf' customer.pk %}" target="_blank">Generate PDF</a>
+    {% endfor %}
+
+{% endblock body %}

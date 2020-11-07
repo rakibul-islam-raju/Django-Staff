@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('barcode/', include('barcodeApp.urls', namespace='barcode')),
     path('sales/', include('sales.urls', namespace='sales')),
+    path('pdf/', include('pdf.urls', namespace='pdf')),
 ]
 
 if settings.DEBUG:

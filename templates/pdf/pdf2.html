@@ -1,0 +1,12 @@
+{% extends '../base.html' %}
+
+{% block body %}
+    <img src="{{ customer.image.path }}" alt="" style="width:150px;">
+    <hr>
+    {{customer}}
+    <hr>
+    {{ customer.descroption|linebreaks}}
+
+
+
+{% endblock body %}
